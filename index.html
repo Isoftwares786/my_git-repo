@@ -2,18 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Git Project - Version 5</title>
+  <title>Git Project - Version 6</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <h1>🎉 Welcome to My Git Project</h1>
-  <p>Now using an external CSS file for styling!</p>
-  <div class="version">Version 5.0</div><br>
-  <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  <p>Now with a color picker to change background color!</p>
+  <div class="version">Version 6.0</div><br>
+
+  <button onclick="toggleDarkMode()">Toggle Dark Mode 🌙</button>
+  <br><br>
+
+  <label for="bgColor">🎨 Pick a Background Color:</label>
+  <input type="color" id="bgColor" onchange="changeBackground(this.value)">
 
   <script>
     function toggleDarkMode() {
       document.body.classList.toggle('dark');
+    }
+
+    function changeBackground(color) {
+      document.body.style.backgroundColor = color;
     }
   </script>
 </body>
