@@ -1,0 +1,49 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222;
+  --btn-bg: #1abc9c;
+  --btn-text: #fff;
+}
+
+body.dark {
+  --bg-color: #1e1e1e;
+  --text-color: #f4f4f4;
+  --btn-bg: #3498db;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  padding: 60px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+  color: var(--text-color);
+}
+
+.version {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #e1f5fe;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
